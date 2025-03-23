@@ -1,0 +1,99 @@
+.page-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 110px 25px 120px
+  border-bottom: 1px solid #ddd
+  margin-bottom: 20px
+  flex-direction: column
+  background: #d38eff
+  border-radius: 0 0 50% 50%
+
+  h1
+    font-size: 32px
+    font-weight: 700
+    color: #333
+
+  .cart-amount
+    font-size: 24px
+    font-weight: 400
+    color: #888
+
+.cart-page
+  background: #fafafa
+  padding: 70px 15px
+  
+  .container
+    .cart-table
+      width: 100%
+      border-collapse: collapse
+      background: #fff
+      border-radius: 8px
+      box-shadow: 0 0 6px 0 rgba(0,0,0,0.03)
+      over-flow: hidden
+
+      .table
+        width: 100%
+        border-collapse: collapse
+        text-align: left
+
+        thead
+          tr
+            background: pink
+            color: #fff
+            th
+           
+              padding: 10px 15px
+              border-bottom: 2px solid #ddd
+              font-size: 18px
+              color: #555
+
+        tbody
+          tr
+            border-bottom: 1px solid #eee
+
+            td
+              padding: 15px
+              vertical-align: middle
+              text-align: left
+              font-size: 16px
+              color: #333
+
+              &:first-child
+                display: flex
+                align-items: center
+
+                img
+                  width: 50px
+                  height: auto
+                  margin-right: 10px
+                  border-radius: 5px
+
+                .cart-item-title
+                  color: #333
+                  font-weight: 500
+                  text-decoration: none
+
+                  &:hover
+                    text-decoration: underline
+
+            .empty-cart
+              text-align: center
+              font-size: 18px
+              color: #999
+              padding: 20px 0
+
+            form
+              display: inline
+
+              .btn
+                background: #f44336
+                color: #fff
+                border: none
+                padding: 5px 10px
+                border-radius: 5px
+                cursor: pointer
+                transition: background 0.3s ease
+
+                &:hover
+                  background: #d32f2f
